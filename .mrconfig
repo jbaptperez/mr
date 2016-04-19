@@ -1,0 +1,31 @@
+[DEFAULT]
+git_gc = git gc "$@"
+
+[$HOME/.config/vcsh/repo.d/bash.git]
+checkout =
+  vcsh clone git@github.com:jbaptperez/bash.git bash
+
+push =
+  vcsh bash push
+
+[$HOME/.config/vcsh/repo.d/vim.git]
+checkout =
+  vcsh clone t@github.com:jbaptperez/vim.git vim
+
+push =
+  vcsh vim push
+
+[$HOME/.config/vcsh/repo.d/git.git]
+checkout =
+  vcsh clone git@github.com:jbaptperez/git.git git
+
+push =
+  vcsh git push
+
+[$HOME/.config/vcsh/repo.d/mr.git]
+checkout =
+  vcsh clone git@github.com:jbaptperez/mr.git mr
+
+push =
+  vcsh mr push
+
